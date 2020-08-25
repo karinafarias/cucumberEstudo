@@ -14,7 +14,7 @@ import enums.Browser;
 @RunWith(ExtendedCucumberRunner.class)
 @CucumberOptions(features = "src/test/resources/features", plugin = {
 		"json:src/test/resources/json/Resultado.json" }, glue = { "" }, monochrome = true, dryRun = false, strict = false,
-				tags= "")
+				tags= "@t")
 public class CucumberExecuteTest {
 
 	@BeforeClass

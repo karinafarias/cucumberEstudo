@@ -1,185 +1,162 @@
 [
   {
-    "comments": [
-      {
-        "line": 1,
-        "value": "# language : pt"
-      }
-    ],
-    "line": 3,
+    "line": 1,
     "elements": [
       {
-        "line": 6,
-        "name": "Validar o esquema",
+        "line": 4,
+        "name": "CT0001 busca de passagem ida e volta - voo direto",
         "description": "",
-        "id": "acessar-a-api-em-https://jsonplaceholder.typicode.com/posts/1-e-realizar-validações;validar-o-esquema",
+        "id": "passagem;ct0001-busca-de-passagem-ida-e-volta---voo-direto",
         "type": "scenario",
-        "keyword": "Cenario",
+        "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 2870786860,
-              "status": "passed"
+              "duration": 2454976000,
+              "error_message": "java.lang.AssertionError: 2020-08-25T17:46:10.467erro ao abrir url: https://www.decolar.com/\r\n\tat org.junit.Assert.fail(Assert.java:88)\r\n\tat interfaces.web.IAcoesBrowser.abrirUrl(IAcoesBrowser.java:23)\r\n\tat paginas.PagePassagem.acessarBrowser(PagePassagem.java:9)\r\n\tat steps.Passagem.que_o_usuário_acessa_o_browser(Passagem.java:11)\r\n\tat ✽.Given que o usuário acessa o browser(passagem.feature:5)\r\n",
+              "status": "failed"
+            },
+            "line": 5,
+            "name": "que o usuário acessa o browser",
+            "match": {
+              "location": "Passagem.que_o_usuário_acessa_o_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "acesso o site",
+            "match": {
+              "location": "Passagem.acesso_o_site()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
             },
             "line": 7,
-            "name": "que eu faço uma requisição",
+            "name": "preencho o campo origem",
             "match": {
-              "location": "API.que_eu_faço_uma_requisição()"
+              "location": "Passagem.preencho_o_campo_origem()"
             },
-            "keyword": "Dado "
+            "keyword": "And "
           },
           {
             "result": {
-              "duration": 936994201,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 8,
-            "name": "eu valido o esquema fornecido",
+            "name": "preencho o campo destino",
             "match": {
-              "location": "API.eu_valido_o_esquema_fornecido()"
+              "location": "Passagem.preencho_o_campo_destino()"
             },
-            "keyword": "Então "
-          }
-        ]
-      },
-      {
-        "line": 10,
-        "name": "Validar o código de resposta",
-        "description": "",
-        "id": "acessar-a-api-em-https://jsonplaceholder.typicode.com/posts/1-e-realizar-validações;validar-o-código-de-resposta",
-        "type": "scenario",
-        "keyword": "Cenario",
-        "steps": [
+            "keyword": "And "
+          },
           {
             "result": {
-              "duration": 781971847,
-              "status": "passed"
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "seleciono a data de ida",
+            "match": {
+              "location": "Passagem.seleciono_a_data_de_ida()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "seleciono a data de volta",
+            "match": {
+              "location": "Passagem.seleciono_a_data_de_volta()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
             },
             "line": 11,
-            "name": "que eu faço uma requisição",
+            "name": "seleciono a quantidade de passageiro adulto",
             "match": {
-              "location": "API.que_eu_faço_uma_requisição()"
+              "location": "Passagem.seleciono_a_quantidade_de_passageiro_adulto()"
             },
-            "keyword": "Dado "
+            "keyword": "And "
           },
           {
             "result": {
-              "duration": 31871,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 12,
-            "name": "eu obtenho um código de sucesso",
+            "name": "seleciono a quantidade de passageiro crianca",
             "match": {
-              "location": "API.eu_obtenho_um_código_de_sucesso()"
+              "location": "Passagem.seleciono_a_quantidade_de_passageiro_crianca()"
             },
-            "keyword": "Então "
-          }
-        ]
-      },
-      {
-        "line": 14,
-        "name": "Validar o formato do JSON de resposta",
-        "description": "",
-        "id": "acessar-a-api-em-https://jsonplaceholder.typicode.com/posts/1-e-realizar-validações;validar-o-formato-do-json-de-resposta",
-        "type": "scenario",
-        "keyword": "Cenario",
-        "steps": [
+            "keyword": "And "
+          },
           {
             "result": {
-              "duration": 859164053,
-              "status": "passed"
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "seleciono a classe da passagem",
+            "match": {
+              "location": "Passagem.seleciono_a_classe_da_passagem()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "cliclo em aplicar",
+            "match": {
+              "location": "Passagem.cliclo_em_aplicar()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
             },
             "line": 15,
-            "name": "que eu faço uma requisição",
+            "name": "clico em procurar",
             "match": {
-              "location": "API.que_eu_faço_uma_requisição()"
+              "location": "Passagem.clico_em_procurar()"
             },
-            "keyword": "Dado "
+            "keyword": "And "
           },
           {
             "result": {
-              "duration": 1898923,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 16,
-            "name": "eu obtenho uma resposta em formato válido",
+            "name": "o site exibe os voos na tela",
             "match": {
-              "location": "API.eu_obtenho_uma_resposta_em_formato_válido()"
+              "location": "Passagem.o_site_exibe_os_voos_na_tela()"
             },
-            "keyword": "Então "
+            "keyword": "Then "
           }
-        ]
-      },
-      {
-        "line": 18,
-        "name": "Validar o conteúdo da chave de name",
-        "description": "",
-        "id": "acessar-a-api-em-https://jsonplaceholder.typicode.com/posts/1-e-realizar-validações;validar-o-conteúdo-da-chave-de-name",
-        "type": "scenario",
-        "keyword": "Cenario",
-        "steps": [
+        ],
+        "tags": [
           {
-            "result": {
-              "duration": 778367285,
-              "status": "passed"
-            },
-            "line": 19,
-            "name": "que eu faço uma requisição",
-            "match": {
-              "location": "API.que_eu_faço_uma_requisição()"
-            },
-            "keyword": "Dado "
-          },
-          {
-            "result": {
-              "duration": 376804,
-              "status": "passed"
-            },
-            "line": 20,
-            "name": "valido se a chave name retorna o valor correto",
-            "match": {
-              "location": "API.valido_se_a_chave_name_retorna_o_valor_correto()"
-            },
-            "keyword": "Então "
-          }
-        ]
-      },
-      {
-        "line": 22,
-        "name": "Validar o conteúdo da chave Content-Type do Header",
-        "description": "",
-        "id": "acessar-a-api-em-https://jsonplaceholder.typicode.com/posts/1-e-realizar-validações;validar-o-conteúdo-da-chave-content-type-do-header",
-        "type": "scenario",
-        "keyword": "Cenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 715583559,
-              "status": "passed"
-            },
-            "line": 23,
-            "name": "que eu faço uma requisição",
-            "match": {
-              "location": "API.que_eu_faço_uma_requisição()"
-            },
-            "keyword": "Dado "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 24,
-            "name": "valido se a chave Content-type retorna o valor correto",
-            "match": {},
-            "keyword": "Então "
+            "line": 3,
+            "name": "@t"
           }
         ]
       }
     ],
-    "name": "Acessar a API em https://jsonplaceholder.typicode.com/posts/1 e realizar validações",
-    "description": "Como usuário",
-    "id": "acessar-a-api-em-https://jsonplaceholder.typicode.com/posts/1-e-realizar-validações",
-    "keyword": "Funcionalidade",
-    "uri": "ValidarJsonPlaceHolder.feature"
+    "name": "Passagem",
+    "description": "",
+    "id": "passagem",
+    "keyword": "Feature",
+    "uri": "passagem.feature"
   }
 ]
