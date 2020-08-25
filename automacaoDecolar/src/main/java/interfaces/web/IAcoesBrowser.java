@@ -16,21 +16,15 @@ public interface IAcoesBrowser {
 
 	default void abrirUrl(String url, String descricaoDoPasso) {
 		try {
-			ILog.logAutomacao("----" + descricaoDoPasso);
 			DriverWeb.getDriver().get(url);
 		} catch (Exception e) {
-			ILog.logAutomacaoWarn(" -- ERRO: erro ao abrir url: " + url);
-			Assert.fail(LocalDateTime.now() + "erro ao abrir url: " + url);
 		}
 	}
 
 	default void navegarUrl(String url, String descricaoDoPasso) {
 		try {
-			ILog.logAutomacao("----" + descricaoDoPasso);
 			DriverWeb.getDriver().navigate().to(url);
 		} catch (Exception e) {
-			ILog.logAutomacaoWarn(" -- ERRO: erro ao navegar para a url: " + url);
-			Assert.fail(LocalDateTime.now() + "erro ao navegar para a url: " + url);
 		}
 	}
 
