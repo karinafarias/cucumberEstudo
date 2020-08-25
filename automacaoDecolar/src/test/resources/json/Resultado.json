@@ -1,0 +1,185 @@
+[
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "# language : pt"
+      }
+    ],
+    "line": 3,
+    "elements": [
+      {
+        "line": 6,
+        "name": "Validar o esquema",
+        "description": "",
+        "id": "acessar-a-api-em-https://jsonplaceholder.typicode.com/posts/1-e-realizar-validações;validar-o-esquema",
+        "type": "scenario",
+        "keyword": "Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2870786860,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "que eu faço uma requisição",
+            "match": {
+              "location": "API.que_eu_faço_uma_requisição()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 936994201,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "eu valido o esquema fornecido",
+            "match": {
+              "location": "API.eu_valido_o_esquema_fornecido()"
+            },
+            "keyword": "Então "
+          }
+        ]
+      },
+      {
+        "line": 10,
+        "name": "Validar o código de resposta",
+        "description": "",
+        "id": "acessar-a-api-em-https://jsonplaceholder.typicode.com/posts/1-e-realizar-validações;validar-o-código-de-resposta",
+        "type": "scenario",
+        "keyword": "Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 781971847,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "que eu faço uma requisição",
+            "match": {
+              "location": "API.que_eu_faço_uma_requisição()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 31871,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "eu obtenho um código de sucesso",
+            "match": {
+              "location": "API.eu_obtenho_um_código_de_sucesso()"
+            },
+            "keyword": "Então "
+          }
+        ]
+      },
+      {
+        "line": 14,
+        "name": "Validar o formato do JSON de resposta",
+        "description": "",
+        "id": "acessar-a-api-em-https://jsonplaceholder.typicode.com/posts/1-e-realizar-validações;validar-o-formato-do-json-de-resposta",
+        "type": "scenario",
+        "keyword": "Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 859164053,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "que eu faço uma requisição",
+            "match": {
+              "location": "API.que_eu_faço_uma_requisição()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 1898923,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "eu obtenho uma resposta em formato válido",
+            "match": {
+              "location": "API.eu_obtenho_uma_resposta_em_formato_válido()"
+            },
+            "keyword": "Então "
+          }
+        ]
+      },
+      {
+        "line": 18,
+        "name": "Validar o conteúdo da chave de name",
+        "description": "",
+        "id": "acessar-a-api-em-https://jsonplaceholder.typicode.com/posts/1-e-realizar-validações;validar-o-conteúdo-da-chave-de-name",
+        "type": "scenario",
+        "keyword": "Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 778367285,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "que eu faço uma requisição",
+            "match": {
+              "location": "API.que_eu_faço_uma_requisição()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 376804,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "valido se a chave name retorna o valor correto",
+            "match": {
+              "location": "API.valido_se_a_chave_name_retorna_o_valor_correto()"
+            },
+            "keyword": "Então "
+          }
+        ]
+      },
+      {
+        "line": 22,
+        "name": "Validar o conteúdo da chave Content-Type do Header",
+        "description": "",
+        "id": "acessar-a-api-em-https://jsonplaceholder.typicode.com/posts/1-e-realizar-validações;validar-o-conteúdo-da-chave-content-type-do-header",
+        "type": "scenario",
+        "keyword": "Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 715583559,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "que eu faço uma requisição",
+            "match": {
+              "location": "API.que_eu_faço_uma_requisição()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 24,
+            "name": "valido se a chave Content-type retorna o valor correto",
+            "match": {},
+            "keyword": "Então "
+          }
+        ]
+      }
+    ],
+    "name": "Acessar a API em https://jsonplaceholder.typicode.com/posts/1 e realizar validações",
+    "description": "Como usuário",
+    "id": "acessar-a-api-em-https://jsonplaceholder.typicode.com/posts/1-e-realizar-validações",
+    "keyword": "Funcionalidade",
+    "uri": "ValidarJsonPlaceHolder.feature"
+  }
+]
